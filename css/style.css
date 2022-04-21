@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Quicksand&display=swap');
+
+body{
+    background: url(../img/fon.png);
+    font-family: 'Mukta', sans-serif;
+    color: #c2e5ee;
+}
+
+.info{
+    list-style: none;
+    color: rgb(187, 184, 184);
+    padding-left: 0;
+}
+
+.info span{
+    color: green;
+}
+
+.empty{
+    width: 100%;
+    height: 180px;
+}
+
+.myNav li{
+    padding:0;
+    font-size: 15px;
+}
+
+.myNav{
+    margin-top: -10px;
+}
+/* Анимация навигации*/
+
+.container-fluide{
+    transform: translateY(-150%);
+    animation: anim 1s forwards;
+}
+
+@keyframes anim{
+    0%{transform: translateY(150%);}
+    100%{transform: translateX(0%);}
+}
+
+/* О сервере */
+.about h1{
+    font-size: 40px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    margin: 50px auto;
+}
+.about h2{
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+.about h3{
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.about p, li{
+    font-size: 20px;
+    text-align: justify;
+    padding-top: 15px;
+}
+.about ol{
+    margin-top: 50px;
+}
+
+.animRow{
+    margin-top: 60px;
+    transform: translateY(-150%);
+    animation: anim 1s forwards;
+}
+
+@keyframes anim{
+    0%{transform: translateY(-150%);}
+    100%{transform: translateX(0%);}
+}
+
+.animRow2{
+    transform: translateY(-150%);
+    animation: anim2 2s forwards;
+}
+
+@keyframes anim2{
+    0%{transform: translateY(150%);}
+    100%{transform: translateX(0%);}
+}
+
+/* Модмфикации */
+
+.title h2{
+    margin: 150px auto 50px;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+/* Кнопки */
+
+
+/* Подвал сайта*/
+
+footer{
+    padding: 30px 0;
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+footer .f-btn{
+    width: 75%;
+    height: 50px;   
+    margin: 50px auto;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;     
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+
+}
+
+footer .f-btn:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 200px;
+    margin-left: 50px;
+    background: #fff;
+    background: linear-gradient(
+        to bottom,
+        rgb(232, 238, 251) 0%,
+        rgb(236, 238, 241) 50%,
+        rgb(200, 215, 248) 100%
+    );
+    left: -40px;
+    top: -100px;
+    z-index: 1;
+    transform: rotate(45deg);
+    position: absolute;
+    animation: movingFlare 3s ease-in-out 0.05s infinite;
+  }
+   
+  @keyframes movingFlare {
+    0% {
+      left: -30px;
+      margin-left: 0px;
+    }
+    30% {
+      left: 110%;
+      margin-left: 80px;
+    }
+    100% {
+      left: 110%;
+      margin-left: 80px;
+    }
+  }
+
+ footer a{
+     padding: 5px;
+     color: #fff;
+     border: 1px solid #fff;
+     border-radius: 5px;
+     margin: 10px;
+ } 
+
+ footer a:hover{
+     background-color: #fff;
+     color: #000;
+ }
+
+ footer i{
+     width: 50px;
+ }
+
+ footer p{
+     margin: 20px auto;
+ }
+
